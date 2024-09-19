@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <main>
+    <div class="flex justify-center item-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <div class="card w-96 bg-white shadow-xl p-6 rounded-lg border border-gray-200">
+                    <div class="card-body">
+                      <div class="text-4xl font-bold text-green-600 mt-2">
+                        <span>$100</span>
+                      </div>
+                       <h2 class="text-lg font-semibold text-gray-700">Account Balance</h2>
+                    </div>
+                  </div>
+                  
+                  <div class="flex gap-x-12 my-5">
+                    <button id="add-money-button" class="btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        Add Money
+                      </button>
+                      <button id="cash-out-button" class="btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        Cash Out
+                      </button>
+                  </div>
+                <div class="hidden">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Amount</span>
+                            </label>
+                            <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Your Pin</span>
+                            </label>
+                            <input id="input-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="login-button" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                <div class="">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Amount</span>
+                            </label>
+                            <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Your Pin</span>
+                            </label>
+                            <input id="input-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="login-button" class="btn btn-primary">Cash out</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+   </main>
+    <script src="js/homepage.js"></script>
+</body>
+</html>
