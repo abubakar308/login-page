@@ -14,16 +14,16 @@
             <div class="camera"></div>
             <div class="display">
               <div class="artboard artboard-demo phone-3">
-                <div class="card w-96 bg-white shadow-xl p-6 rounded-lg border border-gray-200">
+                <div class="absolute top-10 card w-96 bg-white shadow-xl p-6 rounded-lg border border-gray-200">
                     <div class="card-body">
                       <div class="text-4xl font-bold text-green-600 mt-2">
-                        <span id="Balance">$100</span>
+                        <span id="balance">100</span>
                       </div>
                        <h2 class="text-lg font-semibold text-gray-700">Account Balance</h2>
                     </div>
                   </div>
                   
-                  <div class="flex gap-x-12 my-5">
+                  <div class="flex gap-x-12 my-5 absolute top-60">
                     <button id="add-money-button" class="btn">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -55,44 +55,44 @@
                         Cash Out
                       </button>
                   </div>
-                <div id="add-money" class="hidden">
+                <div id="add-money" class="hidden absolute bottom-6">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Add Money Amount</span>
                             </label>
-                            <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                            <input id="add-amount" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Your Pin</span>
                             </label>
-                            <input id="input-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
+                            <input id="add-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="login-button" class="btn btn-primary">Add Money</button>
+                            <button id="add-click-button" class="btn btn-primary">Add Money</button>
                           </div>
                         </form>
                       </div>
                 </div>
-                <div id="cash-out" class="hidden">
+                <div id="cash-out" class="hidden absolute bottom-6">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Cash Out Amount</span>
                             </label>
-                            <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                            <input id="out-amount" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Your Pin</span>
                             </label>
-                            <input id="input-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
+                            <input id="out-pin" type="number" placeholder="Your Pin" class="input input-bordered" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="login-button" class="btn btn-primary">Cash out</button>
+                            <button id="out-click-button" class="btn btn-primary">Cash out</button>
                           </div>
                         </form>
                       </div>
