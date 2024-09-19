@@ -17,7 +17,7 @@
                 <div class="card w-96 bg-white shadow-xl p-6 rounded-lg border border-gray-200">
                     <div class="card-body">
                       <div class="text-4xl font-bold text-green-600 mt-2">
-                        <span>$100</span>
+                        <span id="Balance">$100</span>
                       </div>
                        <h2 class="text-lg font-semibold text-gray-700">Account Balance</h2>
                     </div>
@@ -55,12 +55,12 @@
                         Cash Out
                       </button>
                   </div>
-                <div class="hidden">
+                <div id="add-money" class="hidden">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
-                              <span class="label-text">Enter Amount</span>
+                              <span class="label-text">Add Money Amount</span>
                             </label>
                             <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                           </div>
@@ -76,12 +76,12 @@
                         </form>
                       </div>
                 </div>
-                <div class="">
+                <div id="cash-out" class="hidden">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
-                              <span class="label-text">Enter Amount</span>
+                              <span class="label-text">Cash Out Amount</span>
                             </label>
                             <input id="input-number" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                           </div>
