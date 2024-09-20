@@ -23,7 +23,7 @@
                     </div>
                   </div>
                   <hr class="w-full h-1 mb-3 bg-gray-500">
-                  <div class="flex gap-x-12 my-5 absolute top-60">
+                  <div class=" grid grid-cols-2 gap-2 absolute top-60">
                     <button id="add-money-button" class="btn bg-orange-500">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
                         Add Money
@@ -31,6 +31,10 @@
                       <button id="cash-out-button" class="btn bg-green-300">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m680-320-56-56 62-64H480v-80h206l-62-64 56-56 160 160-160 160ZM280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v160h-80v-40H280v480h400v-40h80v160q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-640h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>
                         Cash Out
+                      </button>
+                      <button id="transaction-button" class="btn bg-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z"/></svg>
+                        Transaction History
                       </button>
                   </div>
                <div class="relative">
@@ -76,6 +80,7 @@
                         </form>
                       </div>
                </div>
+               <div id="tansaction" class="hidden space-y-3 text-center absolute top-0 left-[-140px]"><span id="history">no History</span></div>
                 </div>
                </div>
               </div>
